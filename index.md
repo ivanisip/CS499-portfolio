@@ -1,14 +1,18 @@
-<pre>
-CS 499 ePortfolio
-Name: Ivan Isip
+---
+layout: default
+title: Home
+---
 
-Artifact
-CS 360 Event-Tracking Android App
+# CS 499 ePortfolio
+
+Name: Ivan Isip  
+Artifact: Event Tracker Android App (Android, Java, SQLite)
 
 Sections
-Professional self-assessment
-Code review
-Enhancement 1: Software Engineering and Design
-Enhancement 2: Algorithms and Data Structures
-Enhancement 3: Databases
-</pre>
+- [Professional Self-Assessment](professional-self-assessment.html)
+- [Code Review](code-review.html)
+- [Enhancement 1 Software Design and Engineering](enhancement-1-software-design.html)
+- [Enhancement 2 Algorithms and Data Structures](enhancement-2-algorithms.html)
+- [Enhancement 3 Databases](enhancement-3-databases.html)
+- [Original Artifacts](original-artifacts.html)
+- [Enhanced Artifacts](enhanced-artifacts.html)
