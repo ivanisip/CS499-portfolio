@@ -1,2 +1,13 @@
-theme: minima
 title: CS 499 ePortfolio
+
+theme: minima
+
+header_pages:
+  - index.md
+  - professional-self-assessment.md
+  - code-review.md
+  - enhancement-1-software-design.md
+  - enhancement-2-algorithms.md
+  - enhancement-3-databases.md
+  - original-artifacts.md
+  - enhanced-artifacts.md
