@@ -5,29 +5,22 @@ title: Professional Self-Assessment
 
 # Professional Self-Assessment
 
-## Professional identity
-My goal is a software role focused on mobile and internal business tools. I built an Android Event Tracker app in Java with SQLite storage. I designed features around fast entry, quick lookup, and reliable edits. I improved maintainability by removing duplicated logic and standardizing shared preferences for session state. I improved list handling by adding search, room filtering, and sorting with accurate shown counts. I improved database reliability through schema versioning, safe upgrades, indexes, and parameterized queries. This portfolio shows how I build, test, document, and publish software in a maintainable way.
+I built skills across software design, algorithms, and databases through the Computer Science program. I strengthened those skills by enhancing my Android Event Tracker app and documenting each change in my ePortfolio.
 
-## Program outcomes with evidence
+Software design and engineering  
+I design features with clear requirements and a simple user flow. In the Event Tracker app, I separated responsibilities across activities, helpers, and the database layer. I used SharedPreferences to store the signed-in user and maintained consistent navigation across screens. I also improved security by keeping internal activities inaccessible outside the app.
 
-### Outcome 1 Collaborative environments and decision support
-I translated user needs into features such as create, view, edit, delete, and room context. I made design choices with clear trade-offs, such as local storage for speed and offline use. I documented decisions through enhancement narratives and evidence screenshots tied to behavior and code.
+Algorithms and data structures  
+I apply practical data handling strategies to keep the UI responsive and predictable. In the Event Tracker app, I used stable sorting to control list order and filtering to reduce clutter when users search events. I used simple, readable logic to support user goals such as searching by event name or room and sorting by newest or guest count.
 
-### Outcome 2 Professional oral, written, and visual communication
-I produced a code review video showing a demo, key findings, and planned changes across the three categories. I wrote enhancement narratives with purpose, changes, skills, trade-offs, and security impact. I publish visuals in this ePortfolio, including UI flows, database code, upgrade logic, and query patterns.
+Databases  
+I designed a SQLite schema that supports user accounts and event records. I implemented full CRUD for events and used parameterized queries to prevent injection. I added indexes to improve query performance for sorting and filtering. I also added safer upgrade logic so app updates preserve existing data.
 
-### Outcome 3 Algorithmic design with trade-offs
-I implemented search, room filters, and sort options for the event list. I show total records and shown records to support decisions during filtering. I use stable ordering for consistent results, then support performance with ordering and indexes.
+Security mindset  
+I design for least privilege and safer data handling. I reduced exposure of internal screens, used parameterized queries, and avoided storing readable passwords by using hashing in authentication flows. I added checks to protect password changes and session state during logout.
 
-### Outcome 4 Tools, techniques, and implementation value
-I use Android Studio, emulator testing, and Git version control to build and validate features. I apply SQLiteOpenHelper patterns for schema creation, versioning, and safe upgrades. I publish this ePortfolio through GitHub Pages with clear navigation and run steps.
+Professional communication  
+I document decisions, tradeoffs, and testing evidence in clear language. Each enhancement includes purpose, changes made, code evidence, and the results observed in the running app. This ePortfolio presents my work in a format that a technical reviewer or hiring manager can scan quickly.
 
-### Outcome 5 Security mindset
-I store passwords as hashes and verify credentials using parameterized queries. I block password changes when old password validation fails. I clear session state during logout and avoid storing unnecessary sensitive data.
-
-## Growth and next steps
-- Add automated tests for database upgrades and query results
-- Add stricter field validation for event name, room name, and guest ranges
-- Add stronger password rules and consistent error messages
-- Add export or backup for event data
-- Add accessibility checks for text size and contrast
+Career focus  
+I plan to grow in mobile development and backend systems. This artifact shows end-to-end work across UI, data handling, database design, and security. It also shows that I can improve an existing codebase with targeted changes and provide clear evidence of outcomes.

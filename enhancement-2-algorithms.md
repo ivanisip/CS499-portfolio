@@ -3,46 +3,54 @@ layout: page
 title: Enhancement 2 Algorithms and Data Structures
 ---
 
-# Enhancement 2 Algorithms and Data Structures
+# Enhancement 3 Databases
 
 Purpose and user problem  
-Users need to find events fast. They need search by event or room, filter by room, and sort results, with clear counts and clear empty results feedback.
+Users need reliable storage for accounts and events. Data must persist across app updates. Queries must stay safe and predictable. The event list needs stable ordering and performance support.
 
-Original state  
-The event list showed events, but needed stronger search, filter, sort, and clearer results feedback.
+Original database state  
+The database stored users and events but needed stronger version control, upgrade handling, and performance support for list operations.
 
-Enhancement work  
-- Added text search over event name and room name  
-- Added room filtering  
-- Added sorting options including sorting by guest count  
-- Added total and shown counts plus a no-results message
-
-Algorithm and data structure details  
-Data flow  
-1 Load events from SQLite.  
-2 Apply room filter when selected.  
-3 Apply search filter on event name and room name.  
-4 Apply sort order selection.  
-5 Render results and update shown count.
-
-Trade-off  
-I kept logic readable and stable for the UI. I support performance with ordering and indexes in the database layer.
+Database enhancements  
+- Controlled schema changes through DB_VERSION  
+- Added created_at for stable ordering  
+- Added safe onUpgrade logic to preserve existing data  
+- Added indexes for created_at, room, and name  
+- Used parameterized queries for authentication and event retrieval  
+- Kept full CRUD operations for events
 
 Evidence  
-No results message and shown count reaches zero  
-![No results](images/no-results.png)
+Database version  
+DB_VERSION set for controlled schema upgrades.  
+![DB version](images/DB_01_VERSION.png)
 
-Search filter returns a single match and updates shown count  
-![Search filter](images/search-filter.png)
+Schema create  
+Users and Events tables created with created_at.  
+![Schema create](images/DB_02_Schema_create.png)
 
-Room filter returns one room and updates shown count  
-![Room filter](images/room-filter.png)
+Upgrade logic  
+onUpgrade adds created_at and preserves data.  
+![Upgrade logic](images/DB_03_upgrade_logic.png)
 
-Sort by guests orders events by guest count  
-![Sort by guests](images/sort-by-guests.png)
+Indexes  
+Indexes added for faster filtering and sorting.  
+![Indexes](images/DB_04_indexes.png)
 
-How to run  
-1 Open View Events.  
-2 Type a search term and verify shown count updates.  
-3 Select a room and verify list filters.  
-4 Change sort to Guests and verify ordering changes.
+Parameterized auth query  
+Login uses a parameterized query.  
+![Auth query](images/DB_05_parameterized_auth_query.png)
+
+Parameterized event query  
+Event retrieval uses parameters and stable ordering.  
+![Event query](images/DB_06_parameterized_event_query.png)
+
+CRUD write  
+Insert event stores created_at.  
+![CRUD write](images/DB_07_crud_write.png)
+
+CRUD update and delete  
+Update and delete operate by event id.  
+![CRUD update delete](images/DB_07B_crud_update_delete.png)
+
+Result  
+The database preserves user and event data across version changes, supports predictable ordering, and improves query performance while keeping queries safer through parameter binding.
