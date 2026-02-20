@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Enhancement 2
+layout: page
+title: Enhancement 2 Algorithms and Data Structures
 ---
 
 # Enhancement 2 Algorithms and Data Structures
