@@ -1,48 +1,55 @@
 ---
-layout: default
+layout: page
 title: Enhancement 3 Databases
 ---
 
-Enhancement 3 Databases
+Purpose and user problem  
+Users need reliable storage for accounts and events. Data needs to persist across app updates. Queries need stable ordering and performance support.
 
-Purpose and user problem
-Users need reliable storage for accounts and events. Data must persist across app updates. Queries must stay safe and predictable. The event list needs stable ordering and performance support.
+Original database state  
+The database stored users and events but needed stronger version control, safer upgrade handling, and performance support for list operations.
 
-Original database state
-The database stored users and events but needed stronger version control, upgrade handling, and performance support for list operations.
-
-Database enhancements
-- Controlled schema changes through DB_VERSION
-- Added created_at for stable ordering
-- Added safe onUpgrade logic to preserve existing data
-- Added indexes for created_at, room, and name
-- Used parameterized queries for authentication and event retrieval
+Database enhancements  
+- Controlled schema changes through DB_VERSION  
+- Added safe upgrade logic to preserve existing data  
+- Added indexes for common lookups  
+- Used parameterized queries for authentication and event retrieval  
 - Kept full CRUD operations for events
 
-Evidence
+Evidence  
+Database version  
+<img src="{{ '/images/db-version.png' | relative_url }}" alt="DB version" style="max-width: 900px; width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
 
-Database version
-![DB version](images/db-version.png)
+Schema create  
+<img src="{{ '/images/db-schema-create.png' | relative_url }}" alt="Schema create" style="max-width: 900px; width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
 
-Schema creation
-![DB schema create](images/db-schema-create.png)
+Upgrade logic  
+<img src="{{ '/images/db-upgrade-logic.png' | relative_url }}" alt="Upgrade logic" style="max-width: 900px; width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
 
-Upgrade logic
-![DB upgrade logic](images/db-upgrade-logic.png)
+Indexes  
+<img src="{{ '/images/db-indexes.png' | relative_url }}" alt="Indexes" style="max-width: 900px; width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
 
-Indexes
-![DB indexes](images/db-indexes.png)
+Parameterized auth query  
+<img src="{{ '/images/db-auth-query.png' | relative_url }}" alt="Auth query" style="max-width: 900px; width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
 
-Parameterized queries
-![DB auth query](images/db-auth-query.png)
-![DB event query](images/db-event-query.png)
+Parameterized event query  
+<img src="{{ '/images/db-event-query.png' | relative_url }}" alt="Event query" style="max-width: 900px; width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
 
-CRUD writes
-![DB CRUD insert](images/db-crud-insert.png)
-![DB CRUD update delete](images/db-crud-update-delete.png)
+CRUD insert  
+<img src="{{ '/images/db-crud-insert.png' | relative_url }}" alt="CRUD insert" style="max-width: 900px; width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
 
-Upgrade evidence screenshots
-![Before version bump](images/up-before-version-bump.png)
-![After version bump](images/up-after-version-bump.png)
-![DB version 13](images/up-db-version-13.png)
-![DB version 14](images/up-db-version-14.png)
+CRUD update and delete  
+<img src="{{ '/images/db-crud-update-delete.png' | relative_url }}" alt="CRUD update delete" style="max-width: 900px; width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+
+Upgrade evidence  
+Before version bump  
+<img src="{{ '/images/up-before-version-bump.png' | relative_url }}" alt="Before version bump" style="max-width: 900px; width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+
+DB version 13  
+<img src="{{ '/images/up-db-version-13.png' | relative_url }}" alt="DB version 13" style="max-width: 900px; width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+
+After version bump  
+<img src="{{ '/images/up-after-version-bump.png' | relative_url }}" alt="After version bump" style="max-width: 900px; width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+
+DB version 14  
+<img src="{{ '/images/up-db-version-14.png' | relative_url }}" alt="DB version 14" style="max-width: 900px; width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">

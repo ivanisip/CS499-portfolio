@@ -1,24 +1,27 @@
 ---
-layout: default
+layout: page
 title: Professional Self-Assessment
 ---
 
-Professional Self-Assessment
+I built this ePortfolio around my Android Event Tracker app. I used this artifact because it shows full-stack mobile work across UI, business logic, and a SQLite persistence layer.
 
-Overview
-This ePortfolio summarizes my skills and growth across the computer science program. I used my Android Event Tracker artifact to show progress in software design, data handling, and database work.
+Strengths across program outcomes
 
-Strengths demonstrated
-- I build complete applications with clear user flows.
-- I apply structured updates through incremental improvements.
-- I use evidence to show results, including screens and code-focused database work.
+Software design and engineering  
+I structured the app into focused activities and helpers. I improved maintainability by reducing duplicate logic and standardizing shared preferences usage across screens.
 
-Growth areas
-- I improved consistency in session handling across screens.
-- I improved list behavior using filtering, sorting, and clear empty states.
-- I improved database reliability through upgrade handling and indexing.
+Algorithms and data structures  
+I improved event list behavior by adding predictable sorting and filtering. I applied clear input validation and consistent formatting to reduce user error and reduce rework in downstream flows.
 
-Program outcomes alignment
-- Software design and engineering: stronger structure and reduced duplicated logic.
-- Algorithms and data structures: better list operations through search, filters, and sorting.
-- Databases: safer queries, schema control, upgrade logic, and performance indexes.
+Databases  
+I improved reliability and safety in the SQLite layer. I moved toward stable ordering, added indexes for common queries, and improved upgrade handling to preserve user data during schema changes.
+
+Communication and professionalism  
+I documented design decisions, evidence, and outcomes in each enhancement page. I used screenshots and code-level evidence to support each change.
+
+Artifact summary screenshots  
+Home  
+<img src="{{ '/images/home.png' | relative_url }}" alt="Home screen" style="max-width: 360px; width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+
+Event details  
+<img src="{{ '/images/event-details.png' | relative_url }}" alt="Event details screen" style="max-width: 360px; width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">

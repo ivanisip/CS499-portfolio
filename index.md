@@ -1,30 +1,31 @@
 ---
-layout: default
-title: Home
+layout: page
+title: CS 499 ePortfolio
 ---
 
-CS 499 ePortfolio
-
-Name: Ivan Isip
+Name: Ivan Isip  
 Artifact: Event Tracker Android App (Android, Java, SQLite)
 
-Overview
-This ePortfolio presents my CS 499 capstone work using my Android Event Tracker artifact. It includes a code review, original and enhanced artifacts, and three enhancement narratives aligned to program outcomes.
+Overview  
+This site presents my CS 499 capstone ePortfolio. It includes a code review, original and enhanced artifacts, and three enhancement narratives aligned to the program outcomes.
 
-Event Tracker login screen
-![Event Tracker login screen](images/login.png)
+Key sections  
+- Professional Self-Assessment: program outcomes and reflection  
+- Code Review: video link and timestamps  
+- Enhancement 1: software design and engineering  
+- Enhancement 2: algorithms and data structures  
+- Enhancement 3: databases  
+- Original Artifacts: baseline app evidence  
+- Enhanced Artifacts: post-enhancement evidence
 
-What you will find here
-- Professional Self-Assessment explains my strengths and growth across the program outcomes.
-- Code Review documents issues found and planned improvements.
-- Enhancement narratives describe changes implemented, skills shown, and evidence.
-- Artifact pages provide before and after context and supporting screenshots.
+Login screen  
+<img src="{{ '/images/login.png' | relative_url }}" alt="Login screen" style="max-width: 360px; width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
 
-Sections
-- Professional Self-Assessment: professional-self-assessment.html
-- Code Review: code-review.html
-- Enhancement 1 Software Design and Engineering: enhancement-1-software-design.html
-- Enhancement 2 Algorithms and Data Structures: enhancement-2-algorithms.html
-- Enhancement 3 Databases: enhancement-3-databases.html
-- Original Artifacts: original-artifacts.html
-- Enhanced Artifacts: enhanced-artifacts.html
+Open sections  
+- [Professional Self-Assessment]({{ '/professional-self-assessment.html' | relative_url }})
+- [Code Review]({{ '/code-review.html' | relative_url }})
+- [Enhancement 1 Software Design and Engineering]({{ '/enhancement-1-software-design.html' | relative_url }})
+- [Enhancement 2 Algorithms and Data Structures]({{ '/enhancement-2-algorithms.html' | relative_url }})
+- [Enhancement 3 Databases]({{ '/enhancement-3-databases.html' | relative_url }})
+- [Original Artifacts]({{ '/original-artifacts.html' | relative_url }})
+- [Enhanced Artifacts]({{ '/enhanced-artifacts.html' | relative_url }})

@@ -1,24 +1,28 @@
 ---
-layout: default
+layout: page
 title: Enhancement 2 Algorithms and Data Structures
 ---
 
-Enhancement 2 Algorithms and Data Structures
+Purpose and user problem  
+Users need fast ways to find events. The list needs predictable sorting and usable filtering to reduce time spent scrolling.
 
-Purpose and user problem
-Users need fast filtering and predictable sorting when the event list grows. The app must show results counts and handle empty results cleanly.
+Original state  
+Event list behavior depended on default query order and did not provide clear filtering feedback.
 
-Original state
-The list displayed events, but sorting and filtering needed clearer behavior and better feedback during search.
+Enhancement work  
+- Added sorting options aligned to user goals, such as sorting by guest count  
+- Added filtering by room and search text  
+- Kept list counts visible so users see total vs shown results
 
-Enhancements
-- Added search filter for event name or room.
-- Added room filter dropdown.
-- Added sort option for guest count.
-- Added clear empty state when filters return no rows.
+Evidence screenshots  
+Search filter  
+<img src="{{ '/images/search-filter.png' | relative_url }}" alt="Search filter" style="max-width: 360px; width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
 
-Evidence
-![Search filter](images/search-filter.png)
-![Room filter](images/room-filter.png)
-![Sort by guests](images/sort-by-guests.png)
-![No results state](images/no-results.png)
+Room filter  
+<img src="{{ '/images/room-filter.png' | relative_url }}" alt="Room filter" style="max-width: 360px; width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+
+Sort by guests  
+<img src="{{ '/images/sort-by-guests.png' | relative_url }}" alt="Sort by guests" style="max-width: 360px; width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+
+No results state  
+<img src="{{ '/images/no-results.png' | relative_url }}" alt="No results state" style="max-width: 360px; width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">

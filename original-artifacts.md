@@ -1,15 +1,17 @@
 ---
-layout: default
+layout: page
 title: Original Artifacts
 ---
 
-Original Artifacts
+Original artifact  
+Event Tracker Android App baseline behavior before enhancements.
 
-Artifact
-Event Tracker Android App (Android, Java, SQLite)
+Baseline screenshots  
+Login  
+<img src="{{ '/images/login.png' | relative_url }}" alt="Login screen" style="max-width: 360px; width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
 
-Representative screens from the artifact
-![Login screen](images/login.png)
-![Home screen](images/home.png)
-![Create event](images/create-event.png)
-![Event details](images/event-details.png)
+Home  
+<img src="{{ '/images/home.png' | relative_url }}" alt="Home screen" style="max-width: 360px; width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
+
+Event details  
+<img src="{{ '/images/event-details.png' | relative_url }}" alt="Event details" style="max-width: 360px; width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
