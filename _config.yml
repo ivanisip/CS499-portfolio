@@ -1,7 +1,6 @@
 title: CS 499 ePortfolio
 name: Ivan Isip
 Artifact: Event Tracker Android App (Android, Java SQLite)
-theme: minima
 
 exclude:
   - README.md
