@@ -4,7 +4,7 @@ title: Code Review
 ---
 
 Video  
-- [Module 2 Milestone One Code Review Video](https://snhu-my.sharepoint.com/:v:/r/personal/ivan_isip_snhu_edu/Documents/SNHU/Term%201/CS499/Module%202/submit/Module%202%20-%20Milestone%20One-%20Code%20Review.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=xXBigK)
+- [Module 2 Milestone One Code Review Video](https://snhu-my.sharepoint.com/:v:/r/personal/ivan_isip_snhu_edu/Documents/SNHU/Term%201/CS499/Module%207/submit/Module%202%20-%20Milestone%20One-%20Code%20Review.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=geQ4oz)
 
 Summary  
 This review covers my Android Event Tracker app. The video starts with an app demo, then reviews issues tied to maintainability, data handling, database reliability, and security. The review ends with planned fixes across software design, algorithms and data handling, and databases.
@@ -20,6 +20,7 @@ Timestamps
 18:40 Close
 
 Demo screenshots  
+
 Login  
 <img src="{{ '/images/login.png' | relative_url }}" alt="Login screen" style="max-width: 360px; width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px;">
 
