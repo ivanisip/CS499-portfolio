@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Enhancement 1 Software Design and Engineering
+title: Enhanced Artifacts
 ---
 
 # Original Artifacts
