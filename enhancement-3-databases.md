@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Enhancement 3
+layout: page
+title: Enhancement 3 Databases
 ---
 
 # Enhancement 3 Databases
