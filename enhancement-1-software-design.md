@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Enhancement 1
+layout: page
+title: Enhancement 1 Software Design and Engineering
 ---
 
 # Enhancement 1 Software Design and Engineering
