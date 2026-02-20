@@ -1,8 +1,8 @@
 title: CS 499 ePortfolio
-description: Ivan Isip. Event Tracker Android App (Android, Java, SQLite)
 theme: minima
 
 header_pages:
+  - index.md
   - professional-self-assessment.md
   - code-review.md
   - enhancement-1-software-design.md
@@ -10,7 +10,3 @@ header_pages:
   - enhancement-3-databases.md
   - original-artifacts.md
   - enhanced-artifacts.md
-
-exclude:
-  - README.md
-  - docs

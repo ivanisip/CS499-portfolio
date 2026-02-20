@@ -1,14 +1,15 @@
 ---
-layout: page
+layout: default
 title: Original Artifacts
 ---
 
-# Original Artifacts
+Original Artifacts
 
-Artifact  
-Event Tracker Android App
+Artifact
+Event Tracker Android App (Android, Java, SQLite)
 
-Include links to your original code and any original screenshots.
-
-- Link to original source code folder or zip: ADD_LINK_HERE
-- Original screenshots: ADD_LINKS_OR_IMAGES_HERE
+Representative screens from the artifact
+![Login screen](images/login.png)
+![Home screen](images/home.png)
+![Create event](images/create-event.png)
+![Event details](images/event-details.png)

@@ -1,29 +1,37 @@
 ---
-layout: page
+layout: default
 title: Enhancement 1 Software Design and Engineering
 ---
 
-# Enhancement 1 Software Design and Engineering
+Enhancement 1 Software Design and Engineering
 
-Purpose and user problem  
-Users need a clear, consistent app flow for login, navigation, and account management. The app must protect internal screens from being launched outside the app and keep session behavior predictable.
+Purpose and user problem
+Users need a clear flow from login to event creation and event review. The app needs consistent session handling and reduced duplicate logic to lower maintenance effort.
 
-Original state  
-The app worked end to end but had design issues that increased maintenance work and created security gaps. Some internal activities allowed external launch through the manifest. SharedPreferences usage also risked mismatched reads across screens.
+Original state
+The app worked end to end, but some logic repeated across activities. Session data handling needed consistency across screens.
 
-Enhancements implemented  
-- Locked down internal activities by setting exported false for non-entry screens  
-- Standardized SharedPreferences usage for the signed-in username  
-- Ensured logout clears the saved signed-in user  
-- Reduced duplicate navigation logic by keeping one navigation implementation
+Enhancements
+- Standardized session storage and retrieval across screens.
+- Reduced duplicate navigation and shared logic.
+- Kept screens focused on one job per activity.
 
-Evidence  
-Add screenshots in this section from your code and emulator runs.
+Evidence
 
-- Manifest exported settings: images/ADD_FILE.png  
-- SharedPreferences key usage: images/ADD_FILE.png  
-- Logout clearing preferences: images/ADD_FILE.png  
-- Navigation flow screenshots: images/APP_02_home.png
+Login and navigation entry
+![Login screen](images/login.png)
+![Home screen](images/home.png)
 
-Result  
-Users move through login, home, events, and account screens with predictable navigation. Internal screens stay protected, and logout removes session state.
+Event flow
+![Create event](images/create-event.png)
+![Event details](images/event-details.png)
+
+Edit and delete flow
+![Edit before](images/edit-before.png)
+![Edit after](images/edit-after.png)
+![Delete before](images/delete-before.png)
+![Delete after](images/delete-after.png)
+
+Account and password screens
+![Account info](images/account-info.png)
+![Change password wrong old password](images/change-password-old-wrong.png)
