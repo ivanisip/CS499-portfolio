@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Original Artifacts
+layout: page
+title: Enhancement 1 Software Design and Engineering
 ---
 
 # Original Artifacts
